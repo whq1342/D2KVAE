@@ -26,10 +26,10 @@ A PyTorch implementation of Dynamical Dual Latent Space Variational Autoencoder 
 ```
 
 ## 🚀 Features
-- **Dual latent space architecture for independent representation**: We construct a dual latent structure that explicitly separates process-related and quality-related representations, allowing more accurate and independent characterization of key quality information.
-- **Differentiated priors within a dynamic VAE framework**: Distinct prior distributions are designed for the two latent spaces within dynamic VAE framework, which enhances the ability to capture uniform and transferable dynamic features.
-- **Enhanced Koopman constraint with random steps**: An Koopman-based regularization is introduced for random-step dynamics, enforcing implicit local linear continuity of quality-related states without relying on pseudo-labels and thus avoiding explicit inductive bias.
-- **Demonstrated effectiveness on industrial benchmarks**: The experiments on real-world industrial process datasets demonstrate that the proposed method not only achieves optimal prediction accuracy and stability, but also exhibits strong extrapolation capabilities.
+- **Dual latent space architecture for independent representation**
+- **Differentiated priors within a dynamic VAE framework**
+- **Enhanced Koopman constraint with random steps**
+- **Demonstrated effectiveness on industrial benchmarks**
 
 ## 🛠️ Installation
 ```
