@@ -41,14 +41,13 @@ pip install torch==2.2.2 numpy==1.26.4 matplotlib scikit-learn
 
 ### Quick Start  
 Run the batch experiments with different label rates:
-
+```
 # Make the script executable  
 chmod +x run.sh  
 
 # Execute all experiments  
 ./run.sh  
-
----
+```
 
 The experiment was conducted on:
 
