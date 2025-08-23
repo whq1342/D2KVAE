@@ -39,21 +39,24 @@ pip install torch==2.2.2 numpy==1.26.4 matplotlib scikit-learn
 
 ## 📊 Usage
 
-### Quick Start
+### Quick Start  
 Run the batch experiments with different label rates:
 
-bash
-# Make the script executable
-chmod +x run.sh
+# Make the script executable  
+chmod +x run.sh  
 
-# Execute all experiments
-./run.sh
+# Execute all experiments  
+./run.sh  
 
 ---
 
-The experiment was conducted on an **NVIDIA 3090 GPU**,  
-**Intel(R) Xeon(R) Silver 4214 CPU @ 2.70 GHz**,  
-**Ubuntu 18.04.5 LTS**, and **Python 3.10.8**.
+The experiment was conducted on:
+
+- **GPU**: NVIDIA 3090  
+- **CPU**: Intel(R) Xeon(R) Silver 4214 CPU @ 2.70 GHz  
+- **OS**: Ubuntu 18.04.5 LTS  
+- **Python**: 3.10.8  
+
 
 
 ## ⚙️ Configuration Parameters
