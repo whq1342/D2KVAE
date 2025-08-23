@@ -34,31 +34,41 @@ A PyTorch implementation of Dynamical Dual Latent Space Variational Autoencoder 
 - **Comprehensive Metrics**: RMSE, MAE, R², training time, and computational complexity
 
 ## 🛠️ Installation
-```
-pip install torch numpy matplotlib scikit-learn
-```
-📊 Usage
-Quick Start
+
+pip install torch==2.2.2 numpy==1.26.4 matplotlib scikit-learn
+
+## 📊 Usage
+
+### Quick Start
 Run the batch experiments with different label rates:
-```bash
+
+bash
 # Make the script executable
 chmod +x run.sh
+
 # Execute all experiments
 ./run.sh
-```
+
+---
+
+The experiment was conducted on an **NVIDIA 3090 GPU**,  
+**Intel(R) Xeon(R) Silver 4214 CPU @ 2.70 GHz**,  
+**Ubuntu 18.04.5 LTS**, and **Python 3.10.8**.
+
+
 ## ⚙️ Configuration Parameters
 
-| Parameter        | Description                        | Default            |
-|------------------|------------------------------------|--------------------|
-| --label_rate     | Percentage of labeled data         | 0.2, 0.3, 0.4, 0.5 |
-| --seq_len        | Sequence length for time series    | 30                 |
-| --stride         | Sliding window stride              | 5                  |
-| --label_weight   | Weight for supervised loss         | 5                  |
-| --kl_x_weight    | Weight for x-space KL divergence   | 0.1                |
-| --kl_y_weight    | Weight for y-space KL divergence   | 0.001              |
-| --koopman_weight | Weight for Koopman loss            | 0.01               |
-| --z_x_dim        | Latent dimension for x             | 8-12               |
-| --z_y_dim        | Latent dimension for y             | 9-20               |
+| Parameter        | Description                        | Default                    |
+|------------------|------------------------------------|----------------------------|
+| --label_rate     | Percentage of labeled data         | 0.2, 0.3, 0.4, 0.5         |
+| --seq_len        | Sequence length for time series    | 20, 30, 40                 |
+| --stride         | Sliding window stride              | 1, 5                       |
+| --label_weight   | Weight for supervised loss         | 1, 2, 5                    |
+| --kl_x_weight    | Weight for x-space KL divergence   | 1, 0.1, 0.01, 0.001, 0.0001|
+| --kl_y_weight    | Weight for y-space KL divergence   | 1, 0.1, 0.01, 0.001, 0.0001|
+| --koopman_weight | Weight for Koopman loss            | 1, 0.1, 0.01, 0.001, 0.0001|
+| --z_x_dim        | Latent dimension for x             | 6-15                       |
+| --z_y_dim        | Latent dimension for y             | 7-20                       |
 
 ## 📈 Results
 
