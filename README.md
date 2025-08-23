@@ -34,8 +34,9 @@ A PyTorch implementation of Dynamical Dual Latent Space Variational Autoencoder 
 - **Comprehensive Metrics**: RMSE, MAE, R², training time, and computational complexity
 
 ## 🛠️ Installation
-
+```
 pip install torch==2.2.2 numpy==1.26.4 matplotlib scikit-learn
+```
 
 ## 📊 Usage
 
