@@ -2,6 +2,7 @@
 A PyTorch implementation of Dynamical Dual Latent Space Variational Autoencoder Model with Koopman Constraint for Semi-Supervised Soft Sensor Application.
 
 ## 📁 Project Structure
+```text
 ├── data_pre/ # Data preprocessing modules
 │ ├── data_pre.py # Data preprocessing script
 │ └── dataset.py # Dataset class definition
@@ -22,8 +23,7 @@ A PyTorch implementation of Dynamical Dual Latent Space Variational Autoencoder 
 │ └── scheduler.py # Learning rate schedulers
 ├── main.py # Main execution script
 └── run.sh # Batch experiment runner
-
-text
+```
 
 ## 🚀 Features
 
@@ -39,28 +39,24 @@ text
 # Clone the repository
 git clone <repository-url>
 cd <project-directory>
+```
 
 # Install dependencies (assuming PyTorch environment)
+``
 pip install torch numpy matplotlib scikit-learn
+```
 📊 Usage
 Quick Start
 Run the batch experiments with different label rates:
 
 bash
+```
 # Make the script executable
 chmod +x run.sh
-
 # Execute all experiments
 ./run.sh
-Manual Execution
-Run individual experiments with specific parameters:
+```
 
-bash
-python main.py --number 1 --label_rate 0.2 --seq_len 30 --stride 5 \
-              --label_weight 5 --kl_x_weight 0.1 --kl_y_weight 0.001 \
-              --koopman_weight 0.01 --z_x_dim 8 --z_y_dim 9 \
-              --dense_x_g 12 --dense_h_x 16 --dense_z_y 15 --dense_h_y 16 \
-              --gpu 0
 ⚙️ Configuration Parameters
 Parameter	Description	Default
 --label_rate	Percentage of labeled data	0.2, 0.3, 0.4, 0.5
