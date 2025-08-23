@@ -34,23 +34,13 @@ A PyTorch implementation of Dynamical Dual Latent Space Variational Autoencoder 
 - **Comprehensive Metrics**: RMSE, MAE, R², training time, and computational complexity
 
 ## 🛠️ Installation
-
-```bash
-# Clone the repository
-git clone <repository-url>
-cd <project-directory>
-```
-
-# Install dependencies (assuming PyTorch environment)
 ``
 pip install torch numpy matplotlib scikit-learn
 ```
 📊 Usage
 Quick Start
 Run the batch experiments with different label rates:
-
-bash
-```
+```bash
 # Make the script executable
 chmod +x run.sh
 # Execute all experiments
