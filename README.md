@@ -46,88 +46,73 @@ chmod +x run.sh
 # Execute all experiments
 ./run.sh
 ```
+## ⚙️ Configuration Parameters
 
-⚙️ Configuration Parameters
-Parameter	Description	Default
---label_rate	Percentage of labeled data	0.2, 0.3, 0.4, 0.5
---seq_len	Sequence length for time series	30
---stride	Sliding window stride	5
---label_weight	Weight for supervised loss	5
---kl_x_weight	Weight for x-space KL divergence	0.1
---kl_y_weight	Weight for y-space KL divergence	0.001
---koopman_weight	Weight for Koopman loss	0.01
---z_x_dim	Latent dimension for x	8-12
---z_y_dim	Latent dimension for y	9-20
-📈 Results
+| Parameter        | Description                        | Default            |
+|------------------|------------------------------------|--------------------|
+| --label_rate     | Percentage of labeled data         | 0.2, 0.3, 0.4, 0.5 |
+| --seq_len        | Sequence length for time series    | 30                 |
+| --stride         | Sliding window stride              | 5                  |
+| --label_weight   | Weight for supervised loss         | 5                  |
+| --kl_x_weight    | Weight for x-space KL divergence   | 0.1                |
+| --kl_y_weight    | Weight for y-space KL divergence   | 0.001              |
+| --koopman_weight | Weight for Koopman loss            | 0.01               |
+| --z_x_dim        | Latent dimension for x             | 8-12               |
+| --z_y_dim        | Latent dimension for y             | 9-20               |
+
+## 📈 Results
+
 The model achieves excellent performance across different label rates:
 
-Label Rate	Test RMSE	Test MAE	R² Score	Training Time
-20%	2.33184	1.76085	81.19%	324.81s
-30%	2.43632	1.73426	79.62%	309.54s
-40%	2.25353	1.67239	81.85%	319.52s
-50%	2.37242	1.82313	82.26%	338.34s
-📋 Output Logs
-Training progress and results are saved in the ./logs/ directory with timestamped filenames:
+| Label Rate | Test RMSE | Test MAE | R² Score | Training Time |
+|------------|-----------|----------|----------|---------------|
+| 20%        | 2.33184   | 1.76085  | 81.19%   | 324.81s       |
+| 30%        | 2.43632   | 1.73426  | 79.62%   | 309.54s       |
+| 40%        | 2.25353   | 1.67239  | 81.85%   | 319.52s       |
+| 50%        | 2.37242   | 1.82313  | 82.26%   | 338.34s       |
 
-20250823_214416_exp_1_label_rate_0.2.log
+## 📋 Output Logs
+Training progress and results are saved in the `./logs/` directory with timestamped filenames:
 
-20250823_214416_exp_2_label_rate_0.3.log
-
-20250823_214416_exp_3_label_rate_0.4.log
-
-20250823_214416_exp_4_label_rate_0.5.log
+20250823_214416_exp_1_label_rate_0.2.log  
+20250823_214416_exp_2_label_rate_0.3.log  
+20250823_214416_exp_3_label_rate_0.4.log  
+20250823_214416_exp_4_label_rate_0.5.log  
 
 Each log contains:
 
-Training and validation losses (total, reconstruction, KL divergences, label, Koopman)
+- Training and validation losses (total, reconstruction, KL divergences, label, Koopman)  
+- Learning rate scheduling information  
+- Final evaluation metrics (RMSE, MAE, R²)  
+- Training and testing times  
 
-Learning rate scheduling information
-
-Final evaluation metrics (RMSE, MAE, R²)
-
-Training and testing times
-
-🧠 Model Architecture
+## 🧠 Model Architecture
 The model combines:
 
-Variational Encoder: Maps input sequences to latent distributions
+- **Variational Encoder**: Maps input sequences to latent distributions  
+- **Koopman Operator**: Learns linear dynamics in latent space  
+- **Decoder**: Reconstructs inputs from latent representations  
+- **Regression Head**: Predicts quality variables from latent states  
 
-Koopman Operator: Learns linear dynamics in latent space
+## 🔧 Dependencies
+- Python 3.7+  
+- PyTorch 2.2.2+  
+- NumPy  
+- Matplotlib  
+- scikit-learn  
 
-Decoder: Reconstructs inputs from latent representations
-
-Regression Head: Predicts quality variables from latent states
-
-🔧 Dependencies
-Python 3.7+
-
-PyTorch 2.2.2+
-
-NumPy
-
-Matplotlib
-
-scikit-learn
-
-📝 Citation
+## 📝 Citation
 If you use this code in your research, please cite:
 
-bibtex
-@software{semi_supervised_soft_sensor,
-  title = {Semi-Supervised Soft Sensor with Koopman VAE},
-  author = {Your Name},
-  year = {2024},
-  url = {https://github.com/your-username/repository-name}
+@software{semi_supervised_soft_sensor,  
+  title = {Semi-Supervised Soft Sensor with Koopman VAE},  
+  author = {Your Name},  
+  year = {2024},  
+  url = {https://github.com/your-username/repository-name}  
 }
-📄 License
+
+## 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-🤝 Contributing
+## 🤝 Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-📧 Contact
-For questions and support, please open an issue or contact your-email@example.com
-
-text
-
-This README provides a comprehensive overview of your project, including the structure, features, usage instructions, results, and technical details. The markdown format is ready to be used directly in your GitHub repository.
