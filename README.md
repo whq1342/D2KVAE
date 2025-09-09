@@ -68,8 +68,6 @@ The experiment was conducted on:
 | --kl_x_weight    | Weight for x-space KL divergence   | 1, 0.1, 0.01, 0.001, 0.0001|
 | --kl_y_weight    | Weight for y-space KL divergence   | 1, 0.1, 0.01, 0.001, 0.0001|
 | --koopman_weight | Weight for Koopman loss            | 1, 0.1, 0.01, 0.001, 0.0001|
-| --z_x_dim        | Latent dimension for x             | 6-15                       |
-| --z_y_dim        | Latent dimension for y             | 7-20                       |
 
 ## 📈 Results
 
