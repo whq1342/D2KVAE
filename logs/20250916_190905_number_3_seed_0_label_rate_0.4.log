@@ -1,0 +1,135 @@
+Random Seed: 0
+Label Rate: 0.4
+Using CosineAnnealingWarmupRestarts lr.
+Using monotonic beta schedule, cycle:4, ratio:1
+Using cuda:2 device
+PyTorch Version:  2.2.2+cu121
+last lr:  [0.00026500000000000004]
+Epoch 1/300, 
+train total: 5.925702, reconstruct: 0.882691, kld_x: 0.000000, label: 1.001153, kld_y: 0.000000, koopman: 37.246879 
+val total: 6.573156, reconstruct: 1.546518, kld_x: 0.000000, label: 1.000033, kld_y: 0.000000, koopman: 26.474473
+last lr:  [0.0019150000000000003]
+Epoch 11/300, 
+train total: 5.421956, reconstruct: 0.560789, kld_x: 0.201704, label: 0.971420, kld_y: 0.088974, koopman: 3.777810 
+val total: 5.955431, reconstruct: 1.110546, kld_x: 0.353194, label: 0.967594, kld_y: 0.087720, koopman: 6.473869
+last lr:  [0.0035650000000000005]
+Epoch 21/300, 
+train total: 5.323672, reconstruct: 0.456740, kld_x: 0.212576, label: 0.972999, kld_y: 0.148070, koopman: 1.574576 
+val total: 5.249345, reconstruct: 0.661951, kld_x: 0.222024, label: 0.917049, kld_y: 0.154805, koopman: 1.771618
+last lr:  [0.005215]
+Epoch 31/300, 
+train total: 4.708093, reconstruct: 0.451261, kld_x: 0.439614, label: 0.850666, kld_y: 0.247381, koopman: 2.815142 
+val total: 5.176233, reconstruct: 0.621663, kld_x: 0.469560, label: 0.910253, kld_y: 0.252526, koopman: 2.581561
+last lr:  [0.006865000000000001]
+Epoch 41/300, 
+train total: 4.084262, reconstruct: 0.339087, kld_x: 0.594882, label: 0.745769, kld_y: 0.377156, koopman: 15.356304 
+val total: 3.820146, reconstruct: 0.563635, kld_x: 0.551366, label: 0.650891, kld_y: 0.366847, koopman: 1.140549
+last lr:  [0.008515]
+Epoch 51/300, 
+train total: 2.578618, reconstruct: 0.306690, kld_x: 0.962390, label: 0.453998, kld_y: 0.544985, koopman: 0.428964 
+val total: 2.693853, reconstruct: 0.854301, kld_x: 0.820535, label: 0.367552, kld_y: 0.551966, koopman: 0.417468
+last lr:  [0.009999575921491335]
+Epoch 61/300, 
+train total: 5.403625, reconstruct: 0.502104, kld_x: 2.965268, label: 0.979544, kld_y: 0.707153, koopman: 0.129231 
+val total: 5.549367, reconstruct: 0.697537, kld_x: 1.233713, label: 0.969944, kld_y: 0.779889, koopman: 0.096965
+last lr:  [0.009948774364757369]
+Epoch 71/300, 
+train total: 4.866553, reconstruct: 0.353198, kld_x: 2.003389, label: 0.902054, kld_y: 0.911971, koopman: 0.169525 
+val total: 5.043474, reconstruct: 0.733881, kld_x: 1.898070, label: 0.861317, kld_y: 0.916931, koopman: 0.193914
+last lr:  [0.009814153420445554]
+Epoch 81/300, 
+train total: 2.858138, reconstruct: 0.294284, kld_x: 0.161972, label: 0.512696, kld_y: 0.090954, koopman: 0.123355 
+val total: 3.350807, reconstruct: 0.692237, kld_x: 0.148679, label: 0.531643, kld_y: 0.109520, koopman: 0.095952
+last lr:  [0.009598016490237048]
+Epoch 91/300, 
+train total: 4.058643, reconstruct: 0.264695, kld_x: 0.495601, label: 0.758647, kld_y: 0.199806, koopman: 0.017416 
+val total: 5.090421, reconstruct: 0.663307, kld_x: 0.409669, label: 0.885299, kld_y: 0.199516, koopman: 0.008796
+last lr:  [0.009304061736932191]
+Epoch 101/300, 
+train total: 3.446891, reconstruct: 0.206441, kld_x: 0.940570, label: 0.647783, kld_y: 0.470358, koopman: 0.122446 
+val total: 3.954310, reconstruct: 0.555032, kld_x: 1.091811, label: 0.679512, kld_y: 0.512337, koopman: 0.112112
+last lr:  [0.008937318807859687]
+Epoch 111/300, 
+train total: 1.331418, reconstruct: 0.139342, kld_x: 1.313976, label: 0.238030, kld_y: 0.584609, koopman: 0.029140 
+val total: 1.440959, reconstruct: 0.301006, kld_x: 1.150043, label: 0.227642, kld_y: 0.560243, koopman: 0.034232
+last lr:  [0.008504062776216317]
+Epoch 121/300, 
+train total: 1.835917, reconstruct: 0.144255, kld_x: 1.623851, label: 0.337845, kld_y: 0.775451, koopman: 0.035261 
+val total: 1.965894, reconstruct: 0.436900, kld_x: 1.436950, label: 0.305351, kld_y: 0.769978, koopman: 0.032618
+last lr:  [0.008011706772824763]
+Epoch 131/300, 
+train total: 2.085500, reconstruct: 0.101047, kld_x: 2.060970, label: 0.396296, kld_y: 0.903148, koopman: 0.011148 
+val total: 2.601554, reconstruct: 0.662652, kld_x: 1.663688, label: 0.387255, kld_y: 0.947299, koopman: 0.013490
+last lr:  [0.007468675145409928]
+Epoch 141/300, 
+train total: 1.537968, reconstruct: 0.111217, kld_x: 2.536446, label: 0.284614, kld_y: 1.126616, koopman: 0.017983 
+val total: 1.974612, reconstruct: 0.342114, kld_x: 2.229942, label: 0.325820, kld_y: 1.148325, koopman: 0.022038
+last lr:  [0.00688425931567369]
+Epoch 151/300, 
+train total: 1.149831, reconstruct: 0.069503, kld_x: 0.000000, label: 0.216064, kld_y: 0.000000, koopman: 0.009981 
+val total: 1.652401, reconstruct: 0.316502, kld_x: 0.000000, label: 0.267177, kld_y: 0.000000, koopman: 0.015460
+last lr:  [0.006268458800493517]
+Epoch 161/300, 
+train total: 0.754419, reconstruct: 0.050176, kld_x: 0.391144, label: 0.140732, kld_y: 0.181721, koopman: 0.009997 
+val total: 1.412263, reconstruct: 0.297589, kld_x: 0.337838, label: 0.222827, kld_y: 0.185384, koopman: 0.014639
+last lr:  [0.005631810117416297]
+Epoch 171/300, 
+train total: 0.694177, reconstruct: 0.044459, kld_x: 0.846177, label: 0.129696, kld_y: 0.381370, koopman: 0.008684 
+val total: 1.511593, reconstruct: 0.295402, kld_x: 0.708250, label: 0.243018, kld_y: 0.379296, koopman: 0.013321
+last lr:  [0.004985206501921845]
+Epoch 181/300, 
+train total: 0.883112, reconstruct: 0.047094, kld_x: 1.248572, label: 0.166835, kld_y: 0.587461, koopman: 0.008794 
+val total: 1.862037, reconstruct: 0.290577, kld_x: 1.056833, label: 0.313963, kld_y: 0.574721, koopman: 0.012330
+last lr:  [0.0043397115211436625]
+Epoch 191/300, 
+train total: 0.583273, reconstruct: 0.036647, kld_x: 1.666533, label: 0.108833, kld_y: 0.786823, koopman: 0.008004 
+val total: 1.308082, reconstruct: 0.278703, kld_x: 1.454801, label: 0.205428, kld_y: 0.771599, koopman: 0.010562
+last lr:  [0.0037063697731678827]
+Epoch 201/300, 
+train total: 0.549911, reconstruct: 0.034202, kld_x: 2.140226, label: 0.102510, kld_y: 1.009773, koopman: 0.007841 
+val total: 1.280244, reconstruct: 0.278085, kld_x: 1.891634, label: 0.199855, kld_y: 0.983541, koopman: 0.009913
+last lr:  [0.003096017910897878]
+Epoch 211/300, 
+train total: 0.528760, reconstruct: 0.032310, kld_x: 2.591187, label: 0.098525, kld_y: 1.227863, koopman: 0.007720 
+val total: 1.241000, reconstruct: 0.280681, kld_x: 2.322164, label: 0.191360, kld_y: 1.189165, koopman: 0.009226
+last lr:  [0.0025190992239185928]
+Epoch 221/300, 
+train total: 0.510585, reconstruct: 0.030249, kld_x: 3.044791, label: 0.095168, kld_y: 1.444502, koopman: 0.007573 
+val total: 1.345848, reconstruct: 0.277102, kld_x: 2.747367, label: 0.212918, kld_y: 1.400167, koopman: 0.009667
+last lr:  [0.001985484950916323]
+Epoch 231/300, 
+train total: 0.488199, reconstruct: 0.028065, kld_x: 0.221047, label: 0.091960, kld_y: 0.104502, koopman: 0.007613 
+val total: 1.265635, reconstruct: 0.266551, kld_x: 0.201577, label: 0.199754, kld_y: 0.101114, koopman: 0.009290
+last lr:  [0.0015043053800479617]
+Epoch 241/300, 
+train total: 0.478486, reconstruct: 0.026268, kld_x: 0.674956, label: 0.090244, kld_y: 0.317251, koopman: 0.007585 
+val total: 1.284793, reconstruct: 0.269153, kld_x: 0.619677, label: 0.202941, kld_y: 0.306291, koopman: 0.009222
+last lr:  [0.0010837936271792504]
+Epoch 251/300, 
+train total: 0.470396, reconstruct: 0.025136, kld_x: 1.139450, label: 0.088716, kld_y: 0.533755, koopman: 0.007593 
+val total: 1.283531, reconstruct: 0.274162, kld_x: 1.048406, label: 0.201559, kld_y: 0.515009, koopman: 0.009260
+last lr:  [0.0007311447649896541]
+Epoch 261/300, 
+train total: 0.464207, reconstruct: 0.024497, kld_x: 1.607329, label: 0.087468, kld_y: 0.752803, koopman: 0.007626 
+val total: 1.307266, reconstruct: 0.274309, kld_x: 1.479990, label: 0.206148, kld_y: 0.726019, koopman: 0.009245
+last lr:  [0.00045239271328397504]
+Epoch 271/300, 
+train total: 0.460793, reconstruct: 0.024136, kld_x: 2.074715, label: 0.086721, kld_y: 0.971570, koopman: 0.007682 
+val total: 1.315250, reconstruct: 0.274516, kld_x: 1.910583, label: 0.207576, kld_y: 0.934938, koopman: 0.009310
+last lr:  [0.00025230699695156627]
+Epoch 281/300, 
+train total: 0.460747, reconstruct: 0.023904, kld_x: 2.540589, label: 0.086621, kld_y: 1.190131, koopman: 0.007655 
+val total: 1.303391, reconstruct: 0.274183, kld_x: 2.340166, label: 0.205142, kld_y: 1.147042, koopman: 0.009311
+last lr:  [0.00013431113807311487]
+Epoch 291/300, 
+train total: 0.458992, reconstruct: 0.023792, kld_x: 3.005487, label: 0.086156, kld_y: 1.407614, koopman: 0.007669 
+val total: 1.309352, reconstruct: 0.273894, kld_x: 2.769124, label: 0.206265, kld_y: 1.357303, koopman: 0.009302
+Best loss: 0.188229, best label loss: 0.188229, @ epoch: 219
+train_rmse = 0.02221
+train_mae = 0.01414
+train_r2 =  0.81131
+test_rmse = 2.25353
+test_mae = 1.67239
+r2 =  81.84609
+Training Time:421.21241Seconds
+Testing Time:0.02406Seconds
